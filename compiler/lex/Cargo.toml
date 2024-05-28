@@ -1,0 +1,8 @@
+[package]
+name = "lex"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+unicode-properties = { version = "0.1.1", default-features = false, features = ["emoji"] }
+unicode-xid = "0.2.4"
