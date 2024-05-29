@@ -17,6 +17,10 @@ dependencies = [
 [[package]]
 name = "parse"
 version = "0.1.0"
+dependencies = [
+ "ast",
+ "lex",
+]
 
 [[package]]
 name = "slangc"
