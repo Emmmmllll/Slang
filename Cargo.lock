@@ -5,6 +5,9 @@ version = 3
 [[package]]
 name = "ast"
 version = "0.1.0"
+dependencies = [
+ "source_idx",
+]
 
 [[package]]
 name = "lex"
@@ -20,11 +23,41 @@ version = "0.1.0"
 dependencies = [
  "ast",
  "lex",
+ "source_idx",
+ "unicode-normalization",
 ]
 
 [[package]]
 name = "slangc"
 version = "0.1.0"
+
+[[package]]
+name = "source_idx"
+version = "0.1.0"
+
+[[package]]
+name = "tinyvec"
+version = "1.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "87cc5ceb3875bb20c2890005a4e226a4651264a5c75edb2421b52861a0a0cb50"
+dependencies = [
+ "tinyvec_macros",
+]
+
+[[package]]
+name = "tinyvec_macros"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1f3ccbac311fea05f86f61904b462b55fb3df8837a366dfc601a0161d0532f20"
+
+[[package]]
+name = "unicode-normalization"
+version = "0.1.23"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a56d1686db2308d901306f92a263857ef59ea39678a5458e7cb17f01415101f5"
+dependencies = [
+ "tinyvec",
+]
 
 [[package]]
 name = "unicode-properties"

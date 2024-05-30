@@ -1,3 +1,3 @@
 [workspace]
 resolver = "1"
-members = ["compiler/ast", "compiler/lex", "compiler/parse", "compiler/slangc"]
+members = ["compiler/ast", "compiler/lex", "compiler/parse", "compiler/slangc", "compiler/source_idx"]
